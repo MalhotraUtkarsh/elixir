@@ -13,7 +13,7 @@
      <!--Google Fonts Finish -->
 
      <!--JQUERY-->
-
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!--JQUERY ENDS -->
     <!--ICONS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,19 +24,19 @@
 <body>
 	<!-- HOME PAGE BEGIN -->
 	<!--Header Begin-->
-	<header id = "brand">
+	<header id = "brand" class="header">
 	<div id = "bgeffect"></div>
 	<!-- Name of brand-->
 	<h1 class="brand">Elixir</h1>
 	<!--Navbar-->
 		<nav class="navbar"id="nav_changer">
 			<ul class="nav_items">
-				<li><a href="#brand" title="Home">HOME</a></li>
-				<li><a href="#about" title="About">ABOUT</a></li>
-				<li><a href="#menu" title="Menu">MENU</a></li>
-				<li><a href="#gallery" title="Gallery">GALLERY</a></li>
-				<li><a href="#reservation" title="Reservation">RESERVATIONS</a></li>
-				<li><a href="#map" title="Location">LOCATION</a></li>
+				<li><a href="#slideshow" title="Home" class="nav_change">HOME</a></li>
+				<li><a href="#about" title="About" class="nav_change">ABOUT</a></li>
+				<li><a href="#menu" title="Menu" class="nav_change">MENU</a></li>
+				<li><a href="#gallery" title="Gallery" class="nav_change">GALLERY</a></li>
+				<li><a href="#reservation" title="Reservation" class="nav_change">RESERVATIONS</a></li>
+				<li><a href="#location" title="Location" class="nav_change">LOCATION</a></li>
 			</ul>
 		</nav>
 	
@@ -44,7 +44,7 @@
 	<!--........Header End..........-->
 
 	<!--.......Img => Slider Begin.....-->
-	<section class="slideshow">
+	<section class="slideshow" id="slideshow">
 		
 		
 		<div id = "overlay">
@@ -351,14 +351,14 @@
 		<hr style ="width: 35px; position: absolute ; top:48px; left:53%;  border-color: #c0a756;" >
 		<hr style ="width: 35px;   position: absolute ; top:55px; left:53%; border-color: #c0a756;">
 
-		<div class="gallery_title">
+		<div class="gallery_title gallery_animate">
 		    <!-- GALLERY TITLE -->
 		    <h2>GALLERY</h2>
 		</div>
 		<!-- GALLERY SUBTEXT-->
-		<div class="gallery_subtext">If a picture says a thousand words, then you can imagine how long it would take to describe all our mouthwatering selections. </div>
+		<div class="gallery_subtext gallery_animate">If a picture says a thousand words, then you can imagine how long it would take to describe all our mouthwatering selections. </div>
         <!-- GALLERY ITEMS -->
-		<ul class="gallery_items">
+		<ul class="gallery_items gallery_animate">
 			<li class="all" onclick="all_images()">All Images</li>
 			<li class="food" onclick="foods()">Food</li>
 			<li class="deserts" onclick="deserts()">Deserts</li>
@@ -384,20 +384,20 @@
 	<!-- GALLERY SECTION  ENDS-->
 
     <!-- RESERVATION SECTION BEGINS -->
-	<section class="reservation" id="#reservation">
+	<section class="reservation" id="reservation">
 	
 		<!-- TITLE RESERVATION-->
 
-	 <div class="reservation_heading">
+	 <div class="reservation_heading reservation_animate">
 	 	<img src="Css File\Images\RESERVATION.png" alt="reservation_heading">
 	 </div>
         
         <!-- RESERVATION SUBHEADING -->
-	 <div class="reservation_sub_heading">
+	 <div class="reservation_sub_heading reservation_animate">
 	 	Booking a table has never been so easy with free & instant online restaurant reservations, booking now!!
 	 </div>
        <!-- RESERVATION LOGO => CHEF CAP  -->
-	 <div class="reservation_logo">
+	 <div class="reservation_logo reservation_animate">
 	 	<img src="Css File\Images\reservation_logo.png" alt="">
 	 </div>
        <!-- RESERVATION SUBHEADING 2  -->
@@ -502,7 +502,7 @@
 			</div>
 
 			<div class="button_contact">
-				<input type="button" value="Submit" onclick="test_1()">
+				<input type="button" value="Submit">
 			</div>
 	</section>
 
@@ -511,7 +511,7 @@
 	<!-- MAPS BEGIN -->
 
 	<section class="maps" id="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28288.264392878264!2d78.04972724177244!3d27.592504970989495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1590426143820!5m2!1sen!2sin" width="600" height="500" frameborder="0" style="border:0;position: absolute; top:6800px; width:100vw; opacity: 0.5;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28288.264392878264!2d78.04972724177244!3d27.592504970989495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1590426143820!5m2!1sen!2sin" width="600" height="500" frameborder="0" style="border:0;position: absolute; top:6800px; width:100vw; opacity: 0.5;" allowfullscreen="" aria-hidden="false" tabindex="0" id="location"></iframe>
 	</section>
 
 	<!-- MAPS ENDS -->
@@ -528,6 +528,6 @@
 	<!-- FOOTER ENDS -->
 
 </body>
- <script src="Javascript_code/script.js"type="text/javascript"></script>
+ <script src="Javascript_code/script.js"type="text/javascript"></script> 
 
 </html>

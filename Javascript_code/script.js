@@ -292,3 +292,77 @@ function showSlides(n) {
  //  dots[slideIndex-1].className += " active";
 
 }
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop(); 
+    console.log(scroll)   
+    if (scroll > 360) {
+
+    	$(".header").addClass("active");
+    	$(".nav_change").addClass('active_2') ;
+    	$("#container").addClass('opacity') ;
+
+    }
+
+    else {
+    	$(".header").removeClass("active");
+    	$(".nav_change").removeClass('active_2') ;
+    	$("#container").addClass('opacity') ;
+    }
+
+    if (scroll > 1540) {
+    
+
+     $(".timetable_content").addClass('opacity') ;
+    }
+
+    else {
+    	$(".timetable_content").removeClass('opacity') ;
+    } 
+
+    if (scroll > 2700) {
+    
+
+     $(".gallery_animate").addClass('opacity_slow') ;
+    }
+
+    else {
+    	$(".gallery_animate").removeClass('opacity_slow') ;
+    }
+
+    
+    if (scroll > 3900) {
+    
+
+     $(".reservation_animate").addClass('opacity') ;
+    }
+
+    else {
+    	$(".reservation_animate").removeClass('opacity') ;
+    }
+
+    
+
+    if (scroll > 5400) {
+    
+
+     $(".testimonials_content").addClass('opacity') ;
+    }
+
+    else {
+    	$(".testimonials_content").removeClass('opacity') ;
+    }
+
+    if (scroll > 5750) {
+    
+
+     $(".contact_title").addClass('opacity_slow') ;
+    }
+
+    else {
+    	$(".contact_title").removeClass('opacity_slow') ;
+    }
+
+    
+
+})

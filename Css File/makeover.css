@@ -38,7 +38,7 @@ html {
 
 /* Entire Header => Navbar + Brand Name */
 
-#brand {
+.header {
 	/* background-color: #0E1216; */
 	display: flex;
 	flex-direction: row;
@@ -47,11 +47,18 @@ html {
 	height: 85px;
 	background: #0E1216;
 	opacity: 0.89;
+	z-index: 3;
+	position: fixed;
+	width: 100vw;
 
 }
 
 .active {
-	color:#C0A757 ;
+	background: white ;
+	opacity: 1;
+	animation-name: navbar_white;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
 }
 
 header .test {
@@ -67,8 +74,8 @@ header .test {
 	flex-direction: row;
 	list-style: none;
 } 
-
-.nav_items li a {
+/*Links of Nav bar */
+.nav_change {
 	color: white;
 	text-decoration: none;
     font-size: 14px; 
@@ -76,6 +83,22 @@ header .test {
 	font-family: 'Baloo 2', cursive;
 	font-weight: bold;
 	letter-spacing: 1px;
+}
+
+/*Animation For Navbar*/
+@keyframes navbar_white {
+
+	from {
+		top: -100px;
+	}
+	to {
+		top: 0px;
+	}
+}
+
+.active_2 {
+
+	color: grey;
 }
 
 .nav_items li a:hover {
@@ -201,7 +224,7 @@ header .test {
 }
 .about {
 	background-color: white;
-	height: 1162px;
+	height: 1212px;
 	position: absolute;
 	top: 100vh;
 	width:100vw;
@@ -305,7 +328,7 @@ header .test {
 
 .about_img_history_2 {
 	position: absolute;
-    top: 720px;
+    top: 750px;
     left: 190px;
     opacity: 1;
     width: 520px;
@@ -926,9 +949,6 @@ margin-bottom: 30px;
     top: 20px;
     left: 46%;
     
-    animation-name: finishing ;
-    animation-duration: 6s ;
-    animation-iteration-count: 1;
 
 }
 
@@ -1016,21 +1036,29 @@ margin-bottom: 30px;
 
 /* Making animation in website */
 
-@keyframes finishing {
+.opacity {
+	animation-name: magic;
+	animation-iteration-count: 1;
+	animation-duration: 2s;
+}
+
+.opacity_slow {
+
+	animation-name: magic;
+	animation-iteration-count: 1;
+	animation-duration: 3s;
+
+}
+
+@keyframes magic {
 
 from {
-	transform: rotate(0deg) ;
-	color:#bfa760 ;
-	position: absolute;
-	left: -150px;
+	opacity: 0;
 
 }
 
 to {
-	transform: rotate(360deg) ;
-	color: white;
-	position: absolute;
-	left: 620px;
+	opacity: 1 ;
 }
 
 

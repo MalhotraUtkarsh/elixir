@@ -1,0 +1,1037 @@
+
+
+/* 
+/* Resetting CSS Prperties */
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+ body {
+	background-color: black;
+	overflow-x:  hidden;
+	} 
+ 
+
+/* Name of Resturant */
+.brand {
+    font-family: 'Pinyon Script', cursive;
+	font-size: 50px;
+	color: #C0A757;
+	/* border: 1px yellow solid; */
+	padding: 18px 85px;
+	
+	
+}
+
+/*#bgeffect {
+	background-color: #0E1216;
+	border: 2px red solid;
+	height:100px ;
+}*/
+
+
+/* Entire Header => Navbar + Brand Name */
+
+#brand {
+	/* background-color: #0E1216; */
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	/* border: 2px white solid; */
+	height: 85px;
+	background: #0E1216;
+	opacity: 0.89;
+
+}
+
+.active {
+	color:#C0A757 ;
+}
+
+header .test {
+	background: white;
+	opacity: 1;
+}
+
+
+/* Menu Bar Items - Home , About -- etc. */
+
+.nav_items {
+    display: flex ;
+	flex-direction: row;
+	list-style: none;
+} 
+
+.nav_items li a {
+	color: white;
+	text-decoration: none;
+    font-size: 14px; 
+	padding: 5px 20px;
+	font-family: 'Baloo 2', cursive;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.nav_items li a:hover {
+	color:#C0A757 ;
+}
+
+/* Navbar */
+.navbar {
+	/* border: 2px limegreen solid; */
+	margin-left: auto;
+	padding-right: 105px;
+	padding-top: 30px;
+}
+
+/* HEADER, NAVBAR AND LOGO FINISH */
+
+/* SLIDESHOW BEGIN */
+
+ /* Images Styling */
+.img {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top:0px;
+	z-index: -1;
+	 opacity: 0.4;
+}
+
+.caption {
+	/* border: 2px solid red; */
+    position: absolute;
+    top: 60vh;
+    color: white;
+    font-size: 70px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300; 
+    text-align: center;
+    letter-spacing: 5px;
+    width:100vw;
+   
+}
+
+/*....NOTE => TRY DIFFERENT SIDE IMAGES*/
+
+/* ICONS STYLING => ARROWS */
+
+
+#arrow-right {
+	font-size: 90px;
+    color: grey;
+    opacity: 0.6;
+    position: absolute;
+	top: 250px;
+    /* left: 1310px; */
+    right: 20px;
+
+}
+#arrow-left {
+	font-size: 90px;
+    color: grey;
+    opacity: 0.6;
+    position: absolute;
+    top: 250px;
+    left: 20px;
+}
+
+#arrow-left:hover {
+	opacity: 1;
+	cursor: pointer;
+	color: darkgrey;
+	transition: all 1s ease-in-out;
+	transform: translateX(-13px);
+}
+
+#arrow-right:hover {
+	opacity: 1;
+	cursor: pointer;
+	color: darkgrey;
+	transition: all 1s ease-in-out;
+	transform: translateX(13px);
+}
+/* Overlay Text */
+.design {
+	width: 17%;
+    position: absolute;
+    top: 118px;
+    left: 540px;
+    transform: rotate(-20deg);
+}
+
+.line {
+
+    position: absolute;
+    left: 450px;
+    top: 365px;
+    /* border: 2px red dashed; */
+    height: 40%;
+    width:34%;
+
+}
+.seperator span {
+	position: absolute;
+    left: 500px;
+    top: 550px;
+	font-family: 'Libre Baskerville', serif;
+	color: white;
+	font-size: 20px ;
+	font-style: italic;
+
+}
+
+/* ABOUT US PAGE BEGIN */
+
+/* Section Title */
+.about_us_title {
+	width: 20%;
+	position: absolute;
+	top: -1px;
+	left: 520px;
+	z-index: -1;
+
+
+}
+.about {
+	background-color: white;
+	height: 1162px;
+	position: absolute;
+	top: 100vh;
+	width:100vw;
+	z-index: -2;
+	
+}
+
+/* INTRO OF RESTURANT */
+.section-title p {
+
+	color: #777777;
+	font-size: 17px;
+	font-weight: 400;
+	/* font-style: italic; */
+	width: 550px;
+	text-align: center;
+	/* border: 2px solid red; */
+    font-family: 'Cabin', sans-serif;
+	margin: 120px auto;
+
+}
+
+/* Content in About Us Page */
+
+.history {
+	/* TITLE */
+	font-family: "Great Vibes", serif;
+    font-size: 62px;
+    color: #c0a756;
+    position: absolute;
+    top: 200px;
+    left: 230px;
+    font-weight: 100;
+}
+
+.text {
+	/* FIRST PARAGRAPH */
+	font-family: "Cabin", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #777777;
+    width: 500px;
+    line-height: 34px;
+    position: absolute;
+    top: 300px;
+    left: 190px;
+}
+
+.text_second {
+	/* SECOND PART OF PARAGRAPH */
+	font-family: "Cabin", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #777777;
+    width: 500px;
+    line-height: 34px;
+	position: absolute;
+    top: 770px;
+    right: 50px;
+}
+
+.text_second_other_half {
+	/* SECOND PARAGRAPH */
+	font-family: "Cabin", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #777777;
+    width: 500px;
+    line-height: 34px;
+	position: absolute;
+    top: 990px;
+    right: 50px;
+
+}
+.p2 {
+	/* SECOND PART OF ABOVE PARAGRAPH */
+	font-family: "Cabin", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #777777;
+    width: 500px;
+    line-height: 34px;
+    position: absolute;
+    top: 530px;
+    left: 190px;
+}
+.section-content p span {
+	color: #c0a756 ;
+	font-weight: bold;
+}
+
+/*NOTE => FIX ABOVE REPEATING CODE */
+
+/* SLIDE SHOW HISTORY */
+.about_img_history {
+ position: absolute;
+    top: 200px;
+    right: 20px;
+    opacity: 0;
+}
+
+.about_img_history_2 {
+	position: absolute;
+    top: 720px;
+    left: 190px;
+    opacity: 1;
+    width: 520px;
+}
+
+/* Arrow Icons on history slide show */
+
+.icons-about {
+	position: absolute;
+	top: 915px;
+	font-size: 60px;
+	left: 210px;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.icons-about:hover {
+	opacity: 1;
+}
+
+
+.left_arrow {
+
+font-size:40px; 
+position:absolute; 
+left:14px;
+top:0px;
+font-weight:bold;
+/*border: 2px red solid;*/
+}
+
+.left_arrow:hover {
+position: absolute;
+left: 12px;
+transition: all 1s ease-in-out;
+}
+
+.right_circle {
+	position: absolute;
+    top: 2px;
+    left: 418px;
+    font-size: 60px;
+}
+
+.right_arrow {
+
+	position: absolute;
+    top: 0px;
+    left: 436px;
+    font-size: 40px;
+    font-weight:bold;
+
+}
+
+.right_arrow:hover {
+	position: absolute;
+    left: 439px;
+    transition: all 1s ease-in-out;
+
+}
+/* ABOUT US SECTION ENDS */
+
+/* TIMETABLE SECTION BEGIN */
+
+/* BACKGROUND IMAGE */
+.container {
+	width: 100vw;
+	height:432px ;
+	position: absolute;
+    top: 1820px;
+	/* border: 2px red solid; */
+	background-image: url('Images\\timetable1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	opacity: 0.5;
+}
+
+/* TIMETABLE TITLE */
+.timetable_title {
+	
+	/* font-weight: bold;
+	font-size: 30px; */
+	/*margin-top: 20px; */
+	color: rgb(255, 255, 255);
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 1820px;
+    left: 40%;
+    letter-spacing: 2px;
+    
+}
+/* SUBTEXT */
+.timetable_text {
+	color: #B29859;
+    font-family: "Yellowtail", serif;
+    font-size: 24px;
+     position: absolute;
+    top: 1870px;
+    left: 43%;
+}
+
+/*DAYS TEXT BEGIN */
+.days {
+	
+	color: #B29859;
+    font-family: "Yellowtail", serif;
+    font-size: 37px;
+   
+
+}
+.days_1 {
+
+    position: absolute;
+    top: 1920px;
+    left: 34%;
+   /* border: 1px black solid; */
+    width: 200px;
+
+
+}
+
+.days_2 {
+   
+    position: absolute;
+    top: 1920px;
+    left: 54%;
+   /* border: 1px black solid; */
+    width: 200px;
+}
+
+/* DAYS TEXT ENDS */
+
+/* TIMING TEXT BEGINS */
+
+.time {
+
+	font-family: "Oswald", sans-serif;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.time_1 {
+	position: absolute;
+	top: 2010px;
+    left: 35%;
+    /* border: 1px black solid; */
+}
+
+.time_2 {
+
+	position: absolute;
+	top: 2010px;
+    left: 55%;
+   /* border: 1px black solid; */
+
+}
+
+/*TIMING TEXT ENDS */
+
+/*LINE SEPERABLE */
+.line_timetable {
+	position: absolute;
+	top:1860px;
+	left: 30%;
+	/* border: 1px black solid; */
+	width: 520px;
+	height: 310px;
+	font-weight: bold;
+}
+
+.call_us {
+	position: absolute;
+	top:2180px;
+	left: 44%;
+	font-family: "Oswald", sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*TIMETABLE SECTION ENDS */
+
+/* MENU SECTION BEGINS*/
+
+.menu {
+	background-image: url('Images\\menu_2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* border: 2px yellow solid; */
+	position: absolute;
+	top: 2241px;
+	width: 100vw;
+	height: 120%;
+
+}
+
+.menu_art {
+	position: absolute;
+	top: 60px;
+	left: 40%;
+	font-size: 30px;
+}
+
+.menu_items {
+
+display: flex; 
+color: white;
+height: 100%;
+justify-content: space-around;
+align-items:center;
+
+
+}
+
+.details {
+	/* border: 1px solid red; */
+	margin-left: 10px;
+	margin-top: 15px ;
+	font-weight: bold;
+    color: darkgrey;
+    font-size: 23px;
+    text-shadow: 1px 1px 1px white ;
+}
+
+.menu_items .prime_steaks ul li ,.menu_items .drinks  ul li ,  .menu_items .deserts ul li {
+
+	/* border: 2px white solid; */
+	margin-top: 10px;
+	font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #0c0901;
+    list-style: none;
+    text-shadow: 1.5px 1.5px yellow ;
+}
+
+.category {
+
+	color: #887025;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-shadow: 2px 2px white ;
+
+}
+
+.price {
+	display: flex;
+	justify-content: flex-end;
+	/* border: 2px yellow solid; */
+	margin-top: -25px;
+	margin-right: -60px;
+	font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 19px;
+    color: #bfa760;
+    float: right;
+    text-shadow: 1.2px 1.2px black;
+}
+/* MENU SECTION ENDSS*/
+
+/* GALLERY BEGINS */
+.gallery {
+	background: #141313 ;
+	height: 1300px;
+	position: absolute;
+	top:2972px;
+	width: 100vw;
+	color: white;
+	padding-left: 430px;
+	padding-top: 150px;
+}
+/* Gallery Title*/
+.gallery_title {
+	position: absolute;
+	top:26px;
+	left: 40%;
+	font-family: "Cabin";
+    font-weight: 600;
+    font-size: 28px;
+}
+/* Gallery Navbar */
+.gallery_items {
+	width: 440px;
+	display: flex;
+	font-family: sans-serif ;
+	list-style: none;
+	justify-content: center;
+	/*border: 2px yellow solid;*/
+}
+
+
+/* Gallery Navitems  */
+.gallery_items li {
+	margin: 30px;
+	border:  2px  #141313 solid ;
+	margin-right: 24px;
+	font-size: 16px;
+    font-family: "Cabin", sans-serif;
+
+}
+
+.gallery_items li:hover {
+	border-bottom:  2px #C1A667 solid;
+	cursor: pointer;
+	transition: all 1s ;
+}
+
+
+/* Gallery Subtext  */
+.gallery_subtext {
+
+	font-family: "Cabin";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 17px;
+    color: #777777;
+    /* border: 2px yellow solid; */
+    width: 515px;
+    margin-top: -46px;
+
+}
+/*Gallery Images Styling */
+#gallery_images {
+
+	display: grid;
+	grid-template-columns: repeat(3,auto) ;
+	/* border: 2px yellow dashed; */
+	justify-content: start;
+	position: absolute;
+	left: 0px;
+}
+/*METADATA OF IMAGES */
+.photos {
+	width: 456px;
+    height: 320px;
+}
+
+
+.photos:hover {
+	opacity: 0.4;
+	transition: all 0.7s ease-in-out ;
+}
+/* GALLERY SECTION ENDS */
+
+/* RESERVATION SECTION BEGIN */
+
+/* RESERVATION SECTION BASIC STYLING */
+.reservation {
+
+	position: absolute;
+	top:4272px ;
+	background: white;
+	width: 100vw;
+	height: 1400px;
+	
+}
+/* RESERVATION SECTION TITLE */
+.reservation_heading {
+
+	text-align: center;
+
+}
+
+/* RESERVATION SECTION SUBHEADING */
+.reservation_sub_heading {
+    font-family: "Cabin";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 17px;
+    color: #777777;
+    position: absolute;
+    top: 120px;
+    left: 490px;
+    width: 450px;
+
+}
+
+/* RESERVATION SECTION CHEF CAP LOGO */
+.reservation_logo {
+
+	position: absolute;
+	top: 200px;
+	left: 44%;
+}
+
+/* RESERVATION SECTION OTHER CONTENT */
+.reservation_heading_2 {
+	position: absolute;
+	top: 300px;
+	left: 350px;
+
+}
+
+/* RESERVATION SECTION FORM FOR RESERVATION AND USERS DETAILS  */
+.reservation_forms form {
+
+	display: grid;
+	grid-template-columns: repeat(2,auto) ;
+	grid-column-gap: 100px;
+	justify-content: center;
+	grid-gap: 20px;
+
+}
+
+
+.reservation_forms form input {
+	font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding: 7px;
+    width: 400px;
+
+}
+
+.message textarea {
+	position: absolute;
+    left: 20%;
+    resize: none;
+    width: 820px;
+    height: 300px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding: 7px;
+    margin-top: 36px;
+
+
+}
+
+
+.button  input {
+	width: 300px;
+    height: 60px;
+    background: none;
+    position: absolute;
+    left: 525px;
+    top: 1200px;
+    font-size: 20px;
+    color: #bfa760;
+    box-shadow: none;
+    border: 2px solid #bfa760 ;
+    text-align: center;
+}
+
+.button  input:hover {
+	background: #bfa760 ;
+	color: white;
+	border: 2px white solid;
+	cursor: pointer ;
+	transition: all 1s ;
+}
+/* RESERVATION SECTION ENDS  */
+
+/* TESTIMONIALS STYLING BEGIN */
+.container_testimonials {
+
+	background-image: url('Images\\testimonials.jpg'); 
+	/* background-color: red; */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: absolute;
+	top: 5672px;
+	height: 300px;
+	width: 100vw;
+	line-height: 200px;
+	opacity: 0.4;
+
+}
+/*TESTIMONIALS HEADING */
+.testimonials_heading h2 {
+	font-family: 'Oswald' ;
+	display: inline-block;
+	width: 150px;
+	height: 125px;
+	padding-left: 200px;
+    font-size: 2em;
+    color: rgba(191, 167, 96,1);
+    position: absolute;
+    top: 5710px;
+    font-weight: 400;
+
+}
+
+.testimonials_heading h2::after {
+	content: " " ;
+	background: white;
+	width:42px;
+	height: 2px;
+	position: absolute;
+    top: 47px;
+    left: 200px;
+    color: white;
+}
+
+.testimonials_content  {
+	font-family: 'Cabin' ;
+	display: inline-block;
+	width: 1100px;
+	height: 100px;
+	/* border: 1px solid yellow; */
+    text-align: left;
+    font-weight: 400;
+    color: #e2e9ed;
+    font-size: 24px;
+    position: absolute;
+    top: 5800px;
+    left: 200px;
+}
+
+
+.testimonials_content p {
+margin-bottom: 30px;
+}
+
+.testimonials_content span {
+
+    color: rgba(191, 167, 96,1) ;
+    font-weight: bold;
+}
+
+
+ /* 
+ .testimonials_content:hover {
+	transform: translate3d(0px,0px,0px) ;
+	transition: all 5s;
+	cursor: pointer;
+}
+
+*/
+
+.dots {
+
+
+	position: absolute;
+	top:80px;
+	left: 30px;
+	cursor: pointer;
+	display:flex;
+	padding-left: 390px;
+	padding-top: 30px;
+	
+	
+	}
+
+
+
+.dot_0 {
+ 
+   
+	border-radius: 50%;
+	width:15px;
+	height:15px;
+	border:2px  rgba(191, 167, 96,1) solid;
+	margin-left: 12px;
+}
+
+.dot_0:hover {
+	background-color: rgba(191, 167, 96,1);
+	transition: all 0.5s;
+}
+
+.quotes {
+	/*border: 2px yellow solid;*/
+	position: absolute;
+	top: -40px;
+	left: 950px;
+}
+
+
+/* TESTIMONIALS STYLING ENDS */
+
+/*CONTACT STYLING BEGINS */
+
+.contact {
+	position: absolute;
+	top: 5972px;
+	width: 100vw;
+	background: #141313 ;
+	height: 1300px;
+}
+
+.contact_form {
+	margin-top: 160px;
+}
+
+.contact form input {
+	display: grid;
+	grid-template-rows:repeat(1,auto);
+	width: 500px;
+	margin: 100px;
+	font-size: 25px;
+	margin-left:150px;
+	background: #2C2A2A;
+    border: none;
+    height: 80px;
+    padding-left: 10px ;
+
+}
+
+
+.contact h2 {
+	color: white;
+	text-align: center;
+	font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    left: 46%;
+    
+    animation-name: finishing ;
+    animation-duration: 6s ;
+    animation-iteration-count: 1;
+
+}
+
+
+.contact_subheading p {
+	position: absolute;
+	top: 70px;
+	left: 35%;
+	font-family: "Cabin";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 17px;
+    color: #777777;
+
+}
+
+
+.contact_message textarea {
+
+	width: 550px;
+	height: 460px;
+	float: right;
+	margin-right: 100px;
+	margin-top: -540px;
+	background: #2C2A2A;
+    border: none;
+    font-family: cabin ;
+    font-size: 25px ;
+    padding-left: 10px;
+
+}
+
+
+.button_contact input {
+
+	width: 200px;
+    height: 60px;
+    background:  #bfa760  ;
+    font-size: 20px;
+    color: white;
+    box-shadow: none;
+    border: 2px solid #bfa760 ;
+    margin-left:600px;
+   
+}
+
+.button_contact input:hover {
+	cursor: pointer;
+	background-color:#2C2A2A ;
+	color:#bfa760;
+	transition: all 1s ease-in-out;
+}
+
+/* Footer Begins */
+.footer {
+	width: 100vw;
+	height: 200px;
+	background-color:#2C2A2A;
+	position: absolute;
+	top: 7300px; 
+}
+
+.social_menu i {
+	width:80px;
+	height: 80px;
+	border-radius: 50%;
+	padding-top: 13px ;
+	background-color: #3D3C38;
+	color: white;
+	cursor: pointer;
+}
+
+.social_menu i:hover {
+
+	background-color:#bfa760;
+	transition: all 1s ;
+}
+
+.social-menu {
+	background-color: black ;
+}
+
+/* Footer Ends*/
+
+
+/* Making animation in website */
+
+@keyframes finishing {
+
+from {
+	transform: rotate(0deg) ;
+	color:#bfa760 ;
+	position: absolute;
+	left: -150px;
+
+}
+
+to {
+	transform: rotate(360deg) ;
+	color: white;
+	position: absolute;
+	left: 620px;
+}
+
+
+}

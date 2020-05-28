@@ -5,6 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- <title> Elixir - A family Resturant </title> -->
 	<link rel="stylesheet" href="Css File/makeover.css"> 
+	<!--<link rel="stylesheet" type="text/css" href="Css File/makeover_responsive_1(1024).css" media="screen and (min-width:700px) and (max-width:1000px)">
+	<link rel="stylesheet" type="text/css" href="Css File/makeover_responsive_2(700).css" media="screen  and (min-width:300px) and (max-width:600px)">
+
+-->
 	<!-- Google Font-->
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@562&family=Pinyon+Script&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
@@ -31,12 +35,12 @@
 	<!--Navbar-->
 		<nav class="navbar"id="nav_changer">
 			<ul class="nav_items">
-				<li><a href="#slideshow" title="Home" class="nav_change">HOME</a></li>
-				<li><a href="#about" title="About" class="nav_change">ABOUT</a></li>
-				<li><a href="#menu" title="Menu" class="nav_change">MENU</a></li>
-				<li><a href="#gallery" title="Gallery" class="nav_change">GALLERY</a></li>
-				<li><a href="#reservation" title="Reservation" class="nav_change">RESERVATIONS</a></li>
-				<li><a href="#location" title="Location" class="nav_change">LOCATION</a></li>
+				<li><a href="#slideshow" title="Home" class="nav_change dynamic" id="nav_home">HOME</a></li>
+				<li><a href="#about" title="About" class="nav_change" id="nav_about">ABOUT</a></li>
+				<li><a href="#menu" title="Menu" class="nav_change" id="nav_menu">MENU</a></li>
+				<li><a href="#gallery" title="Gallery" class="nav_change" id="nav_gallery">GALLERY</a></li>
+				<li><a href="#reservation" title="Reservation" class="nav_change" id="nav_reservation">RESERVATIONS</a></li>
+				<li><a href="#location" title="Location" class="nav_change" id="nav_map">LOCATION</a></li>
 			</ul>
 		</nav>
 	
@@ -447,22 +451,22 @@
                     <span class="author" style="position: absolute; top:65px; left:20px">-Steve Jobs</span>
 				</p>
 
-				<p id="text_2" class="text_review" style="transform: translate3d(1500px,-110px,0px)"> 
+				<p id="text_2" class="text_review" style="transform: scale(0); margin-top: -90px;"> 
 					Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o. 
 				    
                     <span class="author" style="position: absolute; top:65px; left:20px;">-Bill Gates</span>
 				</p>
 				
-				<p id="text_3" class="text_review" style="transform: translate3d(1500px,-190px,0px)"> 
+				<p id="text_3" class="text_review" style="transform: scale(0); margin-top: -90px;"> 
 				 Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o. 
 			
-                   <span class="author" style="position: absolute; top:65px; left:20px;">-Elon Musk</span>
+                   <span class="author" style="position: absolute; top:68px; left:20px;">-Elon Musk</span>
 				</p>
 
 				<div class="dots">
-					<div onclick="testimonials_slideshow(1)" class="dot_0"></div>
-				    <div onclick="testimonials_slideshow(2)" class="dot_0"></div>
-				    <div onclick="testimonials_slideshow(3)" class="dot_0"></div>
+					<div onclick="testimonials_slideshow(1)" class="dot_0" id="dot_1"></div>
+				    <div onclick="testimonials_slideshow(2)" class="dot_0" id="dot_2"></div>
+				    <div onclick="testimonials_slideshow(3)" class="dot_0" id="dot_3"></div>
 				</div>
 
 

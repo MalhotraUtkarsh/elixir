@@ -152,33 +152,54 @@
  function testimonials_slideshow(n) {
 
  	if (n == 1) {
- 		 document.getElementById('text_2').style.transform = "translate3d(1500px,-110px,0px)" ;
-        document.getElementById('text_2').style.transition = "all 2.1s ease-in-out" ;
- 		document.getElementById('text_1').style.transform = "translate3d(0px,0px,0px)" ;
- 		document.getElementById('text_1').style.transition = "all 2.5s ease-in-out" ;
- 		document.getElementById('text_3').style.transform = "translate3d(1500px,-190px,0px)" ;
- 		document.getElementById('text_3').style.transition = "all 1.5s ease-in-out" ;
- 		// document.getElementById('testimonials_content').style.transition = "all 2s ease-in-out"
 
+
+
+ 		document.getElementById('text_2').style.transform = "scale(0)" ;
+ 		document.getElementById('text_2').style.transition = "transform 2.1s ease-in-out" ;
+ 		document.getElementById('text_3').style.transform = "scale(0)" ;
+ 		document.getElementById('text_3').style.transition = "transform 2.1s ease-in-out" ;
+ 		document.getElementById('text_1').style.transform = "scale(1)" ;
+ 		document.getElementById('text_1').style.transition = "transform 2.1s ease-in-out" ;
+
+ 		document.getElementById('dot_1').style.background = "rgba(191, 167, 96,1)" ;
+ 		document.getElementById('dot_3').style.background = "none"
+ 		document.getElementById('dot_2').style.background = "none"
+
+ 		
  	}
  	else if (n == 2) {
- 		
- 		document.getElementById('text_1').style.transform = "translate3d(-1500px,0px,0px)" ;
- 		document.getElementById('text_1').style.transition = "all 2s ease-in-out" ;
-        document.getElementById('text_2').style.transform = "translate3d(0px,-110px,0px)" ;
-         document.getElementById('text_2').style.transition = "all 2s ease-in-out" ;
- 		document.getElementById('text_3').style.transform= "translate3d(1500px,-190px,0px)" ;
- 		document.getElementById('text_3').style.transition = "all 2s ease-in-out" ;
+
+
+
+ 		document.getElementById('text_1').style.transform = "scale(0)" ;
+ 		document.getElementById('text_1').style.transition = "transform 2.1s ease-in-out" ;
+ 		document.getElementById('text_3').style.transform = "scale(0)" ;
+ 		document.getElementById('text_3').style.transition = "transform 2.1s ease-in-out" ;
+ 		document.getElementById('text_2').style.transform = "scale(1)" ;
+ 		document.getElementById('text_2').style.transition = "transform 2.1s ease-in-out" ;
+
+ 		document.getElementById('dot_2').style.background = "rgba(191, 167, 96,1)"
+ 		document.getElementById('dot_3').style.background = "none"
+ 		document.getElementById('dot_1').style.background = "none"
+
 
  	}
  	else if (n == 3) {
-       // document.getElementsByClassName('text_1').style.transform = "translate3d(-1500px,0px,0px)" ;
-        document.getElementById("text_1").style.transform = "translate3d(-2000px,20px,20px)"; 
-        document.getElementById('text_1').style.transition = "all 2s ease-in-out" ;
-        document.getElementById('text_2').style.transform = "translate3d(-1500px,-110px,0px)" ;
-        document.getElementById('text_2').style.transition = "all 2.5s ease-in-out" ;
- 		document.getElementById('text_3').style.transform = "translate3d(0px,-190px,0px)" ;
- 		document.getElementById('text_3').style.transition = "all 3s ease-in-out" ;
+
+
+
+ 		document.getElementById('text_2').style.transform = "scale(0)" ;
+ 		document.getElementById('text_2').style.transition = "transform 2.1s ease-in-out" ;
+ 		document.getElementById('text_1').style.transform = "scale(0)" ;
+ 		document.getElementById('text_1').style.transition = "transform 2.1s ease-in-out" ;
+ 		document.getElementById('text_3').style.transform = "scale(1)" ;
+ 		document.getElementById('text_3').style.transition = "transform 2.1s ease-in-out" ;
+
+
+ 		document.getElementById('dot_3').style.background = "rgba(191, 167, 96,1)"
+ 		document.getElementById('dot_2').style.background = "none"
+ 		document.getElementById('dot_1').style.background = "none"
  
 
  	}
@@ -364,5 +385,57 @@ $(window).scroll(function() {
     }
 
     
+// IF-ELSE FOR CHANGING NAV COLOR 
 
+    if (scroll > 0 && scroll < 360) {
+    	$("#nav_home").addClass('dynamic') ;
+    }
+
+    else {
+    	$("#nav_home").removeClass('dynamic') ;
+    }
+
+
+    if (scroll > 360 && scroll < 2127) {
+    	$("#nav_about").addClass('dynamic') ;
+    }
+
+    else {
+    	$("#nav_about").removeClass('dynamic') ;
+    }
+
+
+    if (scroll > 2127 && scroll < 2860) {
+    	$("#nav_menu").addClass('dynamic') ;
+    }
+
+    else {
+    	$("#nav_menu").removeClass('dynamic') ;
+    }
+
+
+     if (scroll > 2860 && scroll < 4140) {
+    	$("#nav_gallery").addClass('dynamic') ;
+    }
+
+    else {
+    	$("#nav_gallery").removeClass('dynamic') ;
+    }
+
+
+     if (scroll > 4140 && scroll < 6700) {
+    	$("#nav_reservation").addClass('dynamic') ;
+    }
+
+    else {
+    	$("#nav_reservation").removeClass('dynamic') ;
+    }
+
+    if (scroll > 6700) {
+    	$("#nav_map").addClass('dynamic') ;
+    }
+
+    else {
+    	$("#nav_map").removeClass('dynamic') ;
+    }
 })

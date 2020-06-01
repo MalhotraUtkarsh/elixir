@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<!-- <title> Elixir - A family Resturant </title> -->
 	<link rel="stylesheet" href="Css File/makeover.css"> 
 	<!--<link rel="stylesheet" type="text/css" href="Css File/makeover_responsive_1(1024).css" media="screen and (min-width:700px) and (max-width:1000px)">
@@ -45,6 +46,14 @@
 		</nav>
 	
 	</header>
+	<div class="hamburger" onclick="toggle()">
+
+		<a href="javascript:void(0);" class="icon">
+			<i class="fa fa-bars"></i>
+		  </a>
+		
+	</div>
+
 	<!--........Header End..........-->
 
 	<!--.......Img => Slider Begin.....-->
@@ -91,7 +100,7 @@
 		<!-- Seperator => Line and text -->
 		<div class ="seperator">
 			<img src="Css File\Images\line.png" alt="Slide-03" class = "line" />
-			<span>The Chef creates divine combinations</span>
+			<p>The Chef creates divine combinations</p>
 		</div>
 	</section>
 	<!--HOME PAGE END-->
@@ -115,30 +124,30 @@
 		    	<div class="content-title">
 		    		<h2 class="history">The History</h2>
 		    	</div>
-		    	<p class="text">
+		    	<p class="text tab_width" >
 		    		The <span>History of Kitchens </span> and Cooks gives further intimation on Mr Boulanger usual menu, stating confidently that "Boulanger served salted poultry and fresh eggs, all presented without a tablecloth on small marble tables". Numerous commentators have also referred to the supposed restaurant owner's eccentric habit of touting for custom outside his establishment, dressed in aristocratic fashion and brandishing a sword.
 		    	</p>
 
-		    	<p class="p2">
+		    	<p class="p2 tab_width" >
 		    		According to Miss Spang, there is not a shred of evidence for any of it. She said: These legends just get passed on by hearsay and then spiral out of control. Her interest in <span>Boulanger</span> dates back to a history of food seminar in Paris in the mid-1990s
 		    	</p>
-		    	<div class="text_second">
+		    	<div class="text_second tab_width">
 		    		The <span>History of Kitchens </span> and Cooks gives further intimation on Mr Boulanger usual menu, stating confidently that "Boulanger served salted poultry and fresh eggs, all presented without a tablecloth on small marble tables". Numerous commentators have also referred to the supposed restaurant owner's eccentric habit of touting for custom outside his establishment, dressed in aristocratic fashion and brandishing a sword
 		    	</div>
-		    	<div class="text_second_other_half">
-		    	    According to Miss Spang, there is not a shred of evidence for any of it. She said: These legends just get passed on by hearsay and then spiral out of control. Her interest in  <span>Boulanger</span> dates back to a history of food seminar in Paris in the mid-1990s	
+		    	<div class="text_second_other_half tab_width">
+		    	    According to Miss Spang, there is not a shred of evidence for any of it. She said: These legends just get passed on by hearsay and then spiral out of control. Her interest in  <span>Boulanger</span> dates back to a history of food.
 		    	</div>
 
 		        <!--Paragrapgh Ends -->
 		    </div>
 
                 <!--SLIDESHOW BEGIN -->
-		    <div class="about_us_slide_show">
+		    <div class="about_us_slide_show" >
 		    	<!-- HISTORY SLIDESHOW 1 -->
 		    	<div class="about-slideshow-history">
-		    			<img src="Css File\Images\about01.jpg" alt="About-1" class="about_img_history">
-		    			<img src="Css File\Images\about02.jpg" alt="About-2" class="about_img_history">
-		    			<img src="Css File\Images\about03.jpg" alt="About-3" class="about_img_history">
+		    			<img src="Css File\Images\about01.png" alt="About-1" class="about_img_history">
+		    			<img src="Css File\Images\about02.png" alt="About-2" class="about_img_history">
+		    			<img src="Css File\Images\about03.png" alt="About-3" class="about_img_history">
 		    	</div>
 
 		    	<!--SLIDESHOW 1 ENDS-->
@@ -172,14 +181,14 @@
 
 	<!-- TIMETABLE BEGIN -->
 
-	<section class="timetable" id="timetable">
-		<!--BACKGROUND IMAGE -->
+	 <section class="timetable" id="timetable">
+		<!-- BACKGROUND IMAGE -->
 		<div class="container"></div>
 		<!-- TIMETABLE CONTENT -->
 		<div class="timetable_content">
 			<!-- TITLE -->
 			<h1 class="timetable_title">OPENING HOURS</h1>
-			<!--SUBTEXT-->
+			<!-- SUBTEXT -->
 			<div class="timetable_text">
 				Call For Reservation
 			</div>
@@ -204,13 +213,13 @@
 					01 : 00 <br> 07: 00
 				</div>
 			</div>
-			<!--CALL US -->
-            <span class="call_us ">CALL US AT : 8546939593 </span>
+			<!-- CALL US -->
+            <p class="call_us ">CALL US AT : 8546939593 </p>
 		</div>
-	</section>
-	<!--TIMETABLE ENDS -->
+	</section> 
+	<!-- TIMETABLE ENDS -->
 
-	<!--MENU SECTION BEGINS-->
+	<!--MENU SECTION BEGINS -->
 	<section class="menu" id="menu">
 		<div class="menu_logo">
 			<img src="Css File\Images\menu_logo.png" alt="" class="menu_art" />
@@ -359,7 +368,7 @@
 		    <!-- GALLERY TITLE -->
 		    <h2>GALLERY</h2>
 		</div>
-		<!-- GALLERY SUBTEXT-->
+		<!-- GALLERY SUBTEXT -->
 		<div class="gallery_subtext gallery_animate">If a picture says a thousand words, then you can imagine how long it would take to describe all our mouthwatering selections. </div>
         <!-- GALLERY ITEMS -->
 		<ul class="gallery_items gallery_animate">
@@ -370,7 +379,7 @@
 		</ul>
 
 		<div id ="gallery_images">
-			<!--GALLERY IMAGES -->
+			<!-- GALLERY IMAGES -->
 
 			<img src ="Css File\Images\gallery01.jpg" alt ="Image_1" class="photos" id = "animate_0">
 			<img src ="Css File\Images\gallery02.jpg" alt ="Image_2" class="photos" id = "animate_1">
@@ -390,7 +399,7 @@
     <!-- RESERVATION SECTION BEGINS -->
 	<section class="reservation" id="reservation">
 	
-		<!-- TITLE RESERVATION-->
+		<!-- TITLE RESERVATION -->
 
 	 <div class="reservation_heading reservation_animate">
 	 	<img src="Css File\Images\RESERVATION.png" alt="reservation_heading">
@@ -398,7 +407,7 @@
         
         <!-- RESERVATION SUBHEADING -->
 	 <div class="reservation_sub_heading reservation_animate">
-	 	Booking a table has never been so easy with free & instant online restaurant reservations, booking now!!
+	 	<!-- Booking a table has never been so easy with free & instant online restaurant reservations, booking now!! -->
 	 </div>
        <!-- RESERVATION LOGO => CHEF CAP  -->
 	 <div class="reservation_logo reservation_animate">
@@ -437,30 +446,30 @@
 	<!-- TESTIMONIALS BEGIN -->
 	<section class="testimonials" id="testimonials">
 		<div class="container_testimonials"></div>
-			 <!--Testimonals_main_heading-->
+			 <!-- Testimonals_main_heading -->
 			<div class="testimonials_heading" id="testimonials_heading">
 				<h2>TESTIMONIALS</h2>
 			</div>
-             <!-- Testimonials_Heading_Ends-->
+             <!-- Testimonials_Heading_Ends -->
 
-			<!--Testimonals_main_content-->
+			<!-- Testimonals_main_content -->
 			<div class="testimonials_content" id ="testimonials_content">
 				<p id="text_1" class="text_review"> 
 					Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o. 
                     
-                    <span class="author" style="position: absolute; top:65px; left:20px">-Steve Jobs</span>
+                    <span class="author">-Steve Jobs</span>
 				</p>
 
 				<p id="text_2" class="text_review" style="transform: scale(0); margin-top: -90px;"> 
 					Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o. 
 				    
-                    <span class="author" style="position: absolute; top:65px; left:20px;">-Bill Gates</span>
+                    <span class="author">-Bill Gates</span>
 				</p>
 				
 				<p id="text_3" class="text_review" style="transform: scale(0); margin-top: -90px;"> 
 				 Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o. 
 			
-                   <span class="author" style="position: absolute; top:68px; left:20px;">-Elon Musk</span>
+                   <span class="author">-Elon Musk</span>
 				</p>
 
 				<div class="dots">
@@ -475,7 +484,7 @@
 				</div>
 
 			</div>
-			<!-- Testimonials_Content_Ends-->
+			Testimonials_Content_Ends
 	</section>
 
 	<!-- TESTIMONIALS END -->
@@ -515,14 +524,14 @@
 	<!-- MAPS BEGIN -->
 
 	<section class="maps" id="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28288.264392878264!2d78.04972724177244!3d27.592504970989495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1590426143820!5m2!1sen!2sin" width="600" height="500" frameborder="0" style="border:0;position: absolute; top:6800px; width:100vw; opacity: 0.5;" allowfullscreen="" aria-hidden="false" tabindex="0" id="location"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28288.264392878264!2d78.04972724177244!3d27.592504970989495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1590426143820!5m2!1sen!2sin" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0" id="location"></iframe>
 	</section>
 
 	<!-- MAPS ENDS -->
 
 	<!-- FOOTER BEGINS -->
 	<footer class="footer">
-		<div class="social_menu" style="text-align: center;margin-top: 80px; font-size: 50px;">
+		<div class="social_menu">
 			<i class="fa fa-twitter" class="social_icon"></i>
 			<i class="fa fa-facebook" class="social_icon"></i>
 			<i class="fa fa-pinterest" class="social_icon"></i>

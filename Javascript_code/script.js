@@ -1,6 +1,15 @@
 // Gallery Foods Function
 
+        
+var width = window.innerWidth ;
+
+
+
+
+         
 		function foods() {
+
+			
 
 			//display : none;
 
@@ -17,21 +26,86 @@
 
 			// Translate 
 
-            document.getElementById('animate_0').style.opacity = "1" ;
+            /* 1440PX */ /* document.getElementById('animate_0').style.opacity = "1" ;
 			document.getElementById('animate_4').style.transform = "translate3d(0px,-320px,0px)" ;
 			document.getElementById('animate_4').style.opacity = "1" ;
 			document.getElementById('animate_4').style.transition = "all 0.5s" ;
 			document.getElementById('animate_6').style.transform = "translate3d(910px,-640px,1150px)" ;
 			document.getElementById('animate_6').style.transition = "all 0.5s" ;
 			document.getElementById('animate_6').style.opacity = "1" ;
-			document.getElementById('animate_7').style.transform = "translate3d(-458px,-319px,-1150px)" ;
+		    document.getElementById('animate_7').style.transform = "translate3d(-458px,-319px,-1150px)" ;
+			document.getElementById('animate_7').style.transition = "all 0.5s" ;
+			document.getElementById('animate_7').style.opacity = "1" ; */
+			
+
+
+			
+			
+			
+			if (width >= 1400){
+
+			document.getElementById('animate_0').style.opacity = "1" ;
+			document.getElementById('animate_4').style.transform = "translate3d(0px,-320px,0px)" ;
+			document.getElementById('animate_4').style.opacity = "1" ;
+			document.getElementById('animate_4').style.transition = "all 0.5s" ;
+			document.getElementById('animate_6').style.transform = "translate3d(910px,-640px,1150px)" ;
+			document.getElementById('animate_6').style.transition = "all 0.5s" ;
+			document.getElementById('animate_6').style.opacity = "1" ;
+		    document.getElementById('animate_7').style.transform = "translate3d(-458px,-319px,-1150px)" ;
 			document.getElementById('animate_7').style.transition = "all 0.5s" ;
 			document.getElementById('animate_7').style.opacity = "1" ;
+			
+
+		} 
 		
+
+		if(width > 1000 && width < 1400) {
+
+			document.getElementById('animate_6').style.transform = "translate3d(680px, -640px, 1150px)" ;
+			document.getElementById('animate_6').style.transition = "all 0.5s" ;
+			document.getElementById('animate_6').style.opacity = "1" ;
+			document.getElementById('animate_7').style.transform = "translate3d(-340px,-319px,-1150px)" ;
+			document.getElementById('animate_7').style.transition = "all 0.5s" ;
+			document.getElementById('animate_7').style.opacity = "1" ;
+			document.getElementById('animate_4').style.transform = "translate3d(0px, -319px, -1150px)" ;
+			document.getElementById('animate_4').style.transition = "all 0.5s" ;
+			document.getElementById('animate_4').style.opacity = "1" ;
+			document.getElementById('animate_0').style.transition = "all 0.5s" ;
+			document.getElementById('animate_0').style.opacity = "1" ;
+			
+
+			}
+
+
+		 if(width > 760 && width < 1000)
+			{
+			document.getElementById('animate_6').style.transform = "translate3d(509px, -640px, 1150px)" ;
+			document.getElementById('animate_6').style.transition = "all 0.5s" ;
+			document.getElementById('animate_6').style.opacity = "1" ;			
+			document.getElementById('animate_7').style.transform = "translate3d(-255px,-319px,-1150px)" ;
+			document.getElementById('animate_7').style.transition = "all 0.5s" ;
+			document.getElementById('animate_7').style.opacity = "1" ;
+			document.getElementById('animate_4').style.transform = "translate3d(0px,-320px,0px)" ;
+			document.getElementById('animate_4').style.opacity = "1" ;
+			document.getElementById('animate_4').style.transition = "all 0.5s" ;
+			document.getElementById('animate_0').style.transition = "all 0.5s" ;
+			document.getElementById('animate_0').style.opacity = "1" ;
+				
+			}
+
+
+		/*if(width > 700 && width < 1000)
+		{
+
+
 		}
+		*/
 
-
+	}
 		function deserts() {
+
+
+			
 
 
 			// Disappear
@@ -46,16 +120,14 @@
 			document.getElementById('animate_6').style.transition = "all 2s" ;
 			document.getElementById('animate_8').style.opacity = "0" ;
 			document.getElementById('animate_8').style.transition = "all 2s" ;
+			
 
 
 
-
+			 if (width >= 1400) {
 			// Tranform
 
 
-			document.getElementById('animate_2').style.transform = "translate3d(-910px,0px,0px)" ;
-			document.getElementById('animate_2').style.opacity = "1" ;
-			document.getElementById('animate_2').style.transition = "all 0.5s" ;
 			document.getElementById('animate_3').style.transform = "translate3d(0px,0px,0px)" ;
 			document.getElementById('animate_3').style.opacity = "1" ;
 			document.getElementById('animate_3').style.transition = "all 0.5s" ;
@@ -63,11 +135,61 @@
 			document.getElementById('animate_5').style.opacity = "1" ;
 			document.getElementById('animate_5').style.transition = "all 0.5s" ;
 			document.getElementById('animate_7').style.transform = "translate3d(0px,-640px,0px)" ;
+			document.getElementById('animate_7').style.transition = "all 0.5s" ;
+			document.getElementById('animate_7').style.opacity = "1" ; 
+			document.getElementById('animate_2').style.transform = "translate3d(-910px,0px,0px)" ;
+			document.getElementById('animate_2').style.opacity = "1" ;
+			document.getElementById('animate_2').style.transition = "all 0.5s" ;
+		
+
+
+			} 
+
+			if (width >= 1000 && width < 1400) {
+
+			document.getElementById('animate_2').style.transform = "translate3d(-680px, 0px, 0px)" ;
+			document.getElementById('animate_2').style.opacity = "1" ;
+			document.getElementById('animate_2').style.transition = "all 0.5s" ;
+			document.getElementById('animate_3').style.transform = "translate3d(340px,-320px,0px)" ;
+			document.getElementById('animate_3').style.opacity = "1" ;
+			document.getElementById('animate_3').style.transition = "all 0.5s" ;
+			document.getElementById('animate_5').style.transform = "translate3d(0px,-320px,0px)" ;
+			document.getElementById('animate_5').style.opacity = "1" ;
+			document.getElementById('animate_5').style.transition = "all 0.5s" ;
+			document.getElementById('animate_7').style.transform = "translate3d(-341px, -319px, -1150px)" ;
 			document.getElementById('animate_7').style.transition = "all 0.5s" ; 
-
-
-
+			document.getElementById('animate_7').style.opacity = "1" ;
+			
 		}
+			
+			
+			/*
+			
+			document.getElementById('animate_1').style.transition = "all 0.5s" ; 
+			document.getElementById('animate_1').style.opacity = "1" ; 
+			
+			*/
+			
+
+		    if (width >= 760 && width < 1000) {
+				document.getElementById('animate_2').style.transform = "translate3d(-510px, 0px, 0px)" ;
+				document.getElementById('animate_2').style.opacity = "1" ;
+				document.getElementById('animate_2').style.transition = "all 0.5s" ;
+				document.getElementById('animate_3').style.transform = "translate3d(252px,-320px,0px)" ;
+				document.getElementById('animate_3').style.opacity = "1" ;
+				document.getElementById('animate_3').style.transition = "all 0.5s" ;
+				document.getElementById('animate_5').style.transform = "translate3d(0px,-320px,0px)" ;
+				document.getElementById('animate_5').style.opacity = "1" ;
+				document.getElementById('animate_5').style.transition = "all 0.5s" ;
+				document.getElementById('animate_7').style.transform = "translate3d(-260px, -319px, -1150px)" ;
+				document.getElementById('animate_7').style.transition = "all 0.5s" ; 
+				document.getElementById('animate_7').style.opacity = "1" ;
+			
+		   }
+
+		   
+
+	}
 
 		function all_images() {
 
@@ -105,28 +227,42 @@
 		}
 
 
-		function drinks() {
+		function drinks() { 
 
-
-
-			
 			document.getElementById('animate_0').style.opacity = "0" ;
 			document.getElementById('animate_0').style.transition = "all 0.5s" ;
-			
-			
 			document.getElementById('animate_3').style.opacity = "0" ;
 			document.getElementById('animate_3').style.transition = "all 0.5s" ;
-
-			
 			document.getElementById('animate_6').style.opacity = "0" ;
 			document.getElementById('animate_6').style.transition = "all 0.5s" ;
-			
 			document.getElementById('animate_7').style.opacity = "0" ;
 			document.getElementById('animate_7').style.transition = "all 0.5s" ;
-			
 			document.getElementById('animate_8').style.opacity = "0" ;
 			document.getElementById('animate_8').style.transition = "all 0.5s" ;
+			/* 
 
+			*/
+
+
+		if (width > 1000 && width < 1400){
+
+		
+			document.getElementById('animate_1').style.transform = "translate3d(-336px,0px,0px)" ;
+			document.getElementById('animate_1').style.opacity = "1" ;
+			document.getElementById('animate_1').style.transition = "all 0.5s" ;
+			document.getElementById('animate_2').style.transform = "translate3d(-332px,0px,0px)" ;
+			document.getElementById('animate_2').style.opacity = "1" ;
+			document.getElementById('animate_2').style.transition = "all 0.5s" ;
+			document.getElementById('animate_4').style.transform = "translate3d(-336px,0px,0px)" ;
+			document.getElementById('animate_4').style.opacity = "1" ;
+			document.getElementById('animate_4').style.transition = "all 0.5s" ;
+			document.getElementById('animate_5').style.transform = "translate3d(0px,-320px,0px)" ;
+			document.getElementById('animate_5').style.opacity = "1" ;
+			document.getElementById('animate_5').style.transition = "all 0.5s" ;
+		
+		}
+
+		if (width >= 1400){
 
 
 			document.getElementById('animate_1').style.transform = "translate3d(-460px,0px,0px)" ;
@@ -135,16 +271,37 @@
 			document.getElementById('animate_2').style.transform = "translate3d(-460px,0px,0px)" ;
 			document.getElementById('animate_2').style.opacity = "1" ;
 			document.getElementById('animate_2').style.transition = "all 0.5s" ;
-
-
-			document.getElementById('animate_4').style.transform = "translate3d(-450px,0px,0px)" ;
+			document.getElementById('animate_4').style.transform = "translate3d(-460px,0px,0px)" ;
 			document.getElementById('animate_4').style.opacity = "1" ;
 			document.getElementById('animate_4').style.transition = "all 0.5s" ;
-			document.getElementById('animate_5').style.transform = "translate3d(0px,-320px,0px)" ;
+			document.getElementById('animate_5').style.transform = "translate3d(-10px,-320px,0px)" ;
 			document.getElementById('animate_5').style.opacity = "1" ;
-			document.getElementById('animate_5').style.transition = "all 0.5s" ;
+			document.getElementById('animate_5').style.transition = "all 0.5s" ; 
+			
+			
+		}
+
+		if (width > 700 && width < 1000) {
+
+			document.getElementById('animate_1').style.transform = "translate3d(-270px,0px,0px)" ;
+			document.getElementById('animate_1').style.opacity = "1" ;
+			document.getElementById('animate_1').style.transition = "all 0.5s" ;
+			document.getElementById('animate_2').style.transform = "translate3d(-268px,0px,0px)" ;
+			document.getElementById('animate_2').style.opacity = "1" ;
+			document.getElementById('animate_2').style.transition = "all 0.5s" ;
+			document.getElementById('animate_4').style.transform = "translate3d(-270px,0px,0px)" ;
+			document.getElementById('animate_4').style.opacity = "1" ;
+			document.getElementById('animate_4').style.transition = "all 0.5s" ;
+			document.getElementById('animate_5').style.transform = "translate3d(-10px,-320px,0px)" ;
+			document.getElementById('animate_5').style.opacity = "1" ;
+			document.getElementById('animate_5').style.transition = "all 0.5s" ; 
+
 
 		}
+
+		
+
+	}
 
 	
 	//TESTIMONIALS SLIDE SHOW 
@@ -439,3 +596,12 @@ $(window).scroll(function() {
     	$("#nav_map").removeClass('dynamic') ;
     }
 })
+
+// TOGGLE NAVBAR 
+
+function toggle() {
+
+	var element = document.getElementById("nav_changer");
+
+	element.classList.toggle('nav_display')
+}
